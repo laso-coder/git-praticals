@@ -43,7 +43,7 @@ public class Spotify {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Spotify spotify = (Spotify) o;
-    return id == spotify.id && song.equals(spotify.song) && category.equals(spotify.category);
+    return id == spotify.id && song.equals(spotify.song);
   }
 
   @Override
