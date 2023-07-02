@@ -59,5 +59,7 @@ public class Main {
 
         playerToGoalsMap.putIfAbsent("Kim", 50);
         System.out.println(playerToGoalsMap.get("Kim"));
+            playerToGoalsMap.replace("Andy", 5, 1000);
+        System.out.println(playerToGoalsMap.get("Andy"));
   }
 }
