@@ -40,6 +40,8 @@ public class Main {
         for (String name : playerToGoalsMap.keySet()) {
             System.out.println(name);
         }
+
+        playerToGoalsMap.forEach((key, val) -> System.out.println(key));
     
   }
 }
