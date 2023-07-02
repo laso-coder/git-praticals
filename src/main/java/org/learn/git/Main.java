@@ -24,6 +24,9 @@ public class Main {
     System.out.println(map);
     System.out.println(map.size());
 
+    System.out.println(one.hashCode() == two.hashCode());
+    System.out.println(one.equals(two));
+
     System.out.println("Is key: " + two + " available? " + map.containsKey(two));
     System.out.println("Logged Off!");
   }
