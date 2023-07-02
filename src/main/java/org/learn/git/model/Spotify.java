@@ -6,6 +6,22 @@ public class Spotify {
   private int id;
   private String song;
 
+  private String category;
+
+  public Spotify(int id, String song, String category) {
+    this.id = id;
+    this.song = song;
+    this.category = category;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
+  }
+
   public int getId() {
     return id;
   }
@@ -27,21 +43,16 @@ public class Spotify {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Spotify spotify = (Spotify) o;
-    return id == spotify.id && song.equals(spotify.song);
+    return id == spotify.id && song.equals(spotify.song) && category.equals(spotify.category);
   }
 
   @Override
   public int hashCode() {
-    return hash(id, song);
-  }
-
-  public Spotify(int id, String song) {
-    this.id = id;
-    this.song = song;
+    return hash(id, song, category);
   }
 
   @Override
   public String toString() {
-    return "Spotify[" + "id=" + id + ", song='" + song + '\'' + ']';
+    return String.format("Spotify [id=%d, song='%s', category='%s']", id, song, category);
   }
 }
