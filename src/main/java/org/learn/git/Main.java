@@ -23,5 +23,7 @@ public class Main {
 
     System.out.println(map);
     System.out.println(map.size());
+
+    System.out.println("Is key: " + two + " available? " + map.containsKey(two));
   }
 }
