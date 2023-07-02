@@ -48,6 +48,10 @@ public class Main {
             goalsByJim = playerToGoalsMap.get("Jim");
         }
         System.out.println(goalsByJim);
+
+        var goalJim = playerToGoalsMap.getOrDefault("Jim", 1);
+        System.out.println(goalJim);
+
     
   }
 }
