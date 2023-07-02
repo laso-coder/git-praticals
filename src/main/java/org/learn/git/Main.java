@@ -29,5 +29,17 @@ public class Main {
 
     System.out.println("Is key: " + two + " available? " + map.containsKey(two));
     System.out.println("Logged Off!");
+
+        Map<String, Integer> playerToGoalsMap = new HashMap<>();
+        playerToGoalsMap.put("Andy", 5);
+        playerToGoalsMap.put("Michel", 7);
+        playerToGoalsMap.put("Jan", 10);
+        playerToGoalsMap.put("Dwight", 2);
+        playerToGoalsMap.put("Jim", 20);
+
+        for (String name : playerToGoalsMap.keySet()) {
+            System.out.println(name);
+        }
+    
   }
 }
