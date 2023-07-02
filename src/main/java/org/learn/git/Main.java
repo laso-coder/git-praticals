@@ -6,7 +6,7 @@ import org.learn.git.model.Spotify;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello World!");
+    System.out.println("Hello Song World!");
 
     // TODO :: If it were mutable, then the hashcode() value or equals() condition might change, and
     // you would never be able to retrieve the key from your HashMap
@@ -21,5 +21,6 @@ public class Main {
     map.put(two, "MP4");
 
     System.out.println(map);
+    System.out.println(map.size());
   }
 }
