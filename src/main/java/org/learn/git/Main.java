@@ -18,6 +18,9 @@ public class Main {
     map.put(one, "MP3");
     map.put(two, "MP4");
 
+    System.out.println(map.get(one) + " Hash " + one.hashCode());
+    System.out.println(map.get(two) + " Hash " + two.hashCode());
+
     System.out.println(map);
     System.out.println(map.size());
   }
