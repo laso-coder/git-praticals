@@ -10,8 +10,8 @@ public class Main {
    // TODO :: If it were mutable, then the hashcode() value or equals() condition might change, and
     // you would never be able to retrieve the key from your HashMap
     Map<Spotify, String> map = new HashMap<>();
-    Spotify one = new Spotify(1,"Maa");
-    Spotify two = new Spotify(1,"Maa");
+    Spotify one = new Spotify(1,"Maa","International");
+    Spotify two = new Spotify(1,"Maa","Regional");
 
     // TODO :: 2 equal objects, they have same hashcode
     //  2 objects have same hashcode, they are NOT equal
