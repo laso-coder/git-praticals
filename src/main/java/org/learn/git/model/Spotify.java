@@ -1,12 +1,11 @@
 package org.learn.git.model;
 
-
 import static java.util.Objects.*;
 
 public class Spotify {
   private int id;
   private String song;
-  
+
   private String category;
 
   public Spotify(int id, String song, String category) {
@@ -44,7 +43,7 @@ public class Spotify {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Spotify spotify = (Spotify) o;
-    return id == spotify.id && song.equals(spotify.song) && category.equals(spotify.category);
+    return id == spotify.id && song.equals(spotify.song);
   }
 
   @Override
@@ -54,10 +53,6 @@ public class Spotify {
 
   @Override
   public String toString() {
-    return "Spotify{" +
-            "id=" + id +
-            ", song='" + song + '\'' +
-            ", category='" + category + '\'' +
-            '}';
+    return String.format("Spotify [id=%d, song='%s', category='%s']", id, song, category);
   }
 }
