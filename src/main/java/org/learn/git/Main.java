@@ -51,5 +51,10 @@ public class Main {
 
     var goalJim = playerToGoalsMap.getOrDefault("Jim", 1);
     System.out.println(goalJim);
+
+            if (!playerToGoalsMap.containsKey("Kims")) {
+            playerToGoalsMap.put("Kims", 5);
+        }
+        System.out.println(playerToGoalsMap.get("Kims"));
   }
 }
