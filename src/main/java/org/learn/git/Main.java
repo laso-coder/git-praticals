@@ -42,6 +42,12 @@ public class Main {
         }
 
         playerToGoalsMap.forEach((key, val) -> System.out.println(key));
+
+     Integer goalsByJim = 0;
+        if (playerToGoalsMap.containsKey("Jim")) {
+            goalsByJim = playerToGoalsMap.get("Jim");
+        }
+        System.out.println(goalsByJim);
     
   }
 }
